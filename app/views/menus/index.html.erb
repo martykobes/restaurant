@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Marty's Awesome Offerings</h1>
+
+<table>
+  <thead>
+    <tr class="back">
+      <th>Item</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @menus.each do |menu| %>
+      <tr>
+        <td><%= menu.item %>&nbsp;&nbsp;&nbsp;</td>
+
+        <td><%= menu.description %>&nbsp;&nbsp;&nbsp;</td>
+
+        <td> $ <%= menu.price %>&nbsp;&nbsp;&nbsp;</td>
+
+        <td><%= menu.rating %>&nbsp;&nbsp;&nbsp;</td>
+
+        <td><%= menu.user.username %>&nbsp;&nbsp;&nbsp;</td>
+
+        <td><%= link_to 'Show', menu, class: "back" %></td>
+        <td><%= link_to 'Edit', edit_menu_path(menu), class: "Cant-see-me" %></td>
+        <td><%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' }, class: "Cant-see-me" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Menu Item', new_menu_path, class: "Cant-see-me" %>

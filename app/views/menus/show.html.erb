@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @menu.item %>
+</p>
+<%= image_tag @menu.avatar.url(:medium) %>
+<p>
+  <strong>Description:</strong>
+  <%= @menu.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+   $ <%= @menu.price %>
+</p>
+
+
+
+<p>
+  <strong>Rating:</strong>
+  <%= @menu.rating %>
+</p>
+<%= link_to 'Back', menus_path, class: "back" %>
+
+<%= link_to 'Edit', edit_menu_path(@menu), class: "Cant-see-me" %>
+
+
+<%= render 'comments/form' %>
+
+<br />
+
+<% @menu.comments.each do |comment| %>
+  <h2><%= comment.entry %></h2>
+  <p>
+  by <%= comment.user.username %>
+  </p>
+<% end %>
