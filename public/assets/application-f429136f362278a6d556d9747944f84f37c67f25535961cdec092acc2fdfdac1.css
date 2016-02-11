@@ -1,0 +1,129 @@
+/*body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+*/
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 17, /Users/martinkowbel/Desktop/tts/rails/restaurant/app/assets/stylesheets/application.scss */
+body {
+  background: url("/assets/wings.jpg") no-repeat;
+  background-size: cover;
+  background-color: rgba(236, 172, 163, 0.5);
+  background-blend-mode: screen;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* line 24, /Users/martinkowbel/Desktop/tts/rails/restaurant/app/assets/stylesheets/application.scss */
+.Cant-see-me {
+  display: none;
+}
+
+/* line 27, /Users/martinkowbel/Desktop/tts/rails/restaurant/app/assets/stylesheets/application.scss */
+.marty {
+  text-align: center;
+  font-size: 100px;
+}
+
+/* line 31, /Users/martinkowbel/Desktop/tts/rails/restaurant/app/assets/stylesheets/application.scss */
+.kobes {
+  text-align: center;
+}
+
+/* line 34, /Users/martinkowbel/Desktop/tts/rails/restaurant/app/assets/stylesheets/application.scss */
+.btn {
+  margin-top: 10px;
+}
+
+/* line 37, /Users/martinkowbel/Desktop/tts/rails/restaurant/app/assets/stylesheets/application.scss */
+.fluid {
+  border-color: #ee1b1b;
+}
+
+/* line 40, /Users/martinkowbel/Desktop/tts/rails/restaurant/app/assets/stylesheets/application.scss */
+.back {
+  color: #071ff6;
+  font-size: 2em;
+}
